@@ -1,0 +1,10 @@
+.vs/
+.vscode/
+Backup/
+Debug/
+Release/
+
+*.*proj.user
+*.htm
+*.log
+*.aps

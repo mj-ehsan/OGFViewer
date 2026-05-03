@@ -5,7 +5,8 @@
 #include "OGFViewer.h"
 #include "ChildView.h"
 #include "OGFLoader.h"
-#include "glee.h"
+#include <gl/glew.h>
+#include <gl/glu.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -140,8 +141,8 @@ void CChildView::RenderScene()
 		int x = m_OldMousePos.x - m_NewMousePos.x;
 		int y = m_OldMousePos.y - m_NewMousePos.y;
 		
-		static anglex = 0;
-		static angley = 0;
+		static int anglex = 0;
+		static int angley = 0;
 		anglex += x;
 		angley += y;
 		glRotatef(270,1,0,0);

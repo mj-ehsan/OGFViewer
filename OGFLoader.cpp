@@ -58,7 +58,7 @@ void ReadChunk1284(FILE* inputFile, int pos,OGFModel *model,const std::string &p
 	fread(&num,sizeof(int),1,inputFile);
 	fread(&size,sizeof(int),1,inputFile);
 	fread(&ident,sizeof(int),1,inputFile);
-	//	ident = 302455168;		Проверял на 2х файлах
+	//	ident = 302455168;		РџСЂРѕРІРµСЂСЏР» РЅР° 2С… С„Р°Р№Р»Р°С…
 	fread(&numverts,sizeof(int),1,inputFile);
 	if(ident == 302455168)
 	{
@@ -102,7 +102,7 @@ OGFModel *Load(char *fileName,const std::string &pathToTextures)
 {
 	FILE *inputFile;
 	//MeshBuilder meshBuilder;
-	GLeeInit();
+	glewInit();	// GLeeInit();
 	inputFile = fopen(fileName,"rb");
 	if(!inputFile)
 	{
