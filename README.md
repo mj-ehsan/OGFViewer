@@ -11,7 +11,9 @@ I've uploaded this project to GitHub because the status and hosting reliability 
 > Furthermore, any version labeled 1.0.5 found elsewhere online is not affiliated with, nor part of, this software
 
 > [!IMPORTANT]
-> If you want to research original source code just switch branch into [legacy][legacy_link]
+> This branch contains a modified version of the source code. See details below.
+> * If you want to research original source code just switch branch into [legacy][legacy_link]
+> * If you want to get a working version of the program switch branch into [legacy_patch][legpatch_link]
 
 > [!NOTE]
 > The most significant update in this version is that it has been successfully recompiled and built using modern Microsoft compilers. For a detailed breakdown of changes, please refer to the changelog below.
@@ -58,5 +60,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [ogfv_dload_link]: http://stalkerin.gameru.net/modules.php?name=Downloads&d_op=viewdownload&cid=10&min=10&orderby=titleA&show=10
 [stgameru_link]: http://stalkerin.gameru.net
 [legacy_link]: https://github.com/justtails/OGFViewer/tree/legacy
+[legpatch_link]: https://github.com/justtails/OGFViewer/tree/legacy_patch
 [glew_link]: https://sourceforge.net/projects/glew/
 [glext_link]: https://sourceforge.net/projects/glextwin32/
