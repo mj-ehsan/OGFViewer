@@ -1,9 +1,10 @@
 .vs/
 .vscode/
-Bin/
+/Bin/
 Intermediate/
 
 *.*proj.user
 *.htm
 *.log
 *.aps
+*.exe
