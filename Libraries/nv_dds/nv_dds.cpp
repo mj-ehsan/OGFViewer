@@ -1,4 +1,6 @@
-#include "StdAfx.h"
+﻿// This software contains source code provided by NVIDIA Corporation.
+// License: http://developer.download.nvidia.com/licenses/general_license.txt
+
 ///////////////////////////////////////////////////////////////////////////////
 //
 // Description:
@@ -147,16 +149,17 @@
 //         image[0].get_mipmap(i).get_depth(), 0, image.get_format(), 
 //         GL_UNSIGNED_BYTE, image[0].get_mipmap(i));
 // }
+
 #if defined(WIN32)
-#  include <windows.h>
-#  define GET_EXT_POINTER(name, type) \
-      name = (type)wglGetProcAddress(#name)
+#include <windows.h>
+#define GET_EXT_POINTER(name, type) \
+    name = (type)wglGetProcAddress(#name)
 #elif defined(UNIX)
-#  include <GL/glx.h>
-#  define GET_EXT_POINTER(name, type) \
-      name = (type)glXGetProcAddressARB((const GLubyte*)#name)
+#include <GL/glx.h>
+#define GET_EXT_POINTER(name, type) \
+    name = (type)glXGetProcAddressARB((const GLubyte*)#name)
 #else
-#  define GET_EXT_POINTER(name, type)
+#define GET_EXT_POINTER(name, type)
 #endif
 
 #ifdef __APPLE__
@@ -166,8 +169,7 @@
 #include <GL/gl.h>
 #include <GL/glext.h>
 #endif
-#include <stdio.h>
-#include <assert.h>
+#include <cstdio>
 #include "nv_dds.h"
 
 using namespace std;

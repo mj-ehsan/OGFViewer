@@ -1,7 +1,7 @@
-// MainFrm.cpp : implementation of the CMainFrame class
+﻿// MainFrm.cpp : implementation of the CMainFrame class
 //
 
-#include "stdafx.h"
+#include "pch.h"
 #include "OGFViewer.h"
 
 #include "MainFrm.h"

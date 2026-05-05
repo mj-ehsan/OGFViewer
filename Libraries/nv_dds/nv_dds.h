@@ -1,21 +1,9 @@
-#ifndef __NV_DDS_H__
+﻿#ifndef __NV_DDS_H__
 #define __NV_DDS_H__
 
-#ifdef WIN32
-#  include <windows.h>
-#endif
-
-#include <string>
+#include <cassert>
 #include <vector>
-#include <assert.h>
-
-#ifdef __APPLE__
-#include <OpenGL/gl.h>
-#include <OpenGL/glext.h>
-#else
-#include <GL/gl.h>
-#include <GL/glext.h>
-#endif
+#include <string>
 
 using namespace std;
 

@@ -20,14 +20,15 @@ I've uploaded this project to GitHub because the status and hosting reliability 
 
 ## Requirements
 
-* Visual Studio 2017 (and above)
-* Microsoft Visual C++ v141
-* MFC for MSVC v141
+* Visual Studio 2019 (and above)
+* Microsoft Visual C++ v142
+* MFC for MSVC v142
 
 ## Dependencies
 
 * GLext (located in repo; see [source][glext_link])
 * GLew 2.3.1 (located in repo; see [source][glew_link])
+* Nvidia DDS (located in repo)
 
 ## Credits
 

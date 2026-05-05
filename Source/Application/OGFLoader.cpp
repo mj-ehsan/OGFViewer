@@ -1,6 +1,6 @@
-#include "stdafx.h"
+﻿#include "pch.h"
 #include "OGFLoader.h"
-#include "nv_dds.h"
+#include <nv_dds.h>
 
 using namespace nv_dds;
 

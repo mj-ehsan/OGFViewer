@@ -1,8 +1,7 @@
 .vs/
 .vscode/
-Backup/
-Debug/
-Release/
+Bin/
+Intermediate/
 
 *.*proj.user
 *.htm
