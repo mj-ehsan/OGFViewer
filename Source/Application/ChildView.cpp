@@ -27,10 +27,14 @@ CChildView::CChildView()
 		TRACE( "Can't open file %s, error = %u\n",
 			"OGFViewer.cfg", fileException.m_cause );
 	}
-	char      szBuffer[256];
+
+	// Вызывает исключение при запуске (проверено после сборке в CMake, в VS исключения нет)
+	/* 
+	char szBuffer[256];
 	memset(szBuffer,0,256);
 	UINT nActual = myFile.Read( szBuffer, sizeof( szBuffer ) );
 	m_PathToStalker.assign(szBuffer);
+	 */
 	m_MouseLPressed = false;
 	m_MouseRPressed = false;
 }
