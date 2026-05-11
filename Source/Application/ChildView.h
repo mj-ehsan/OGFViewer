@@ -71,7 +71,7 @@ protected:
 	HDC			m_DContext;
 	HGLRC		m_RContext;
 	LPCSTR		pszFileName;
-	OGFModel	*m_Model;
+	std::unique_ptr<OGFModel> m_Model;
 	std::string	m_PathToStalker;
 };
 

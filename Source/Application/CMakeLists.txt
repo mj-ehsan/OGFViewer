@@ -42,7 +42,6 @@ target_link_libraries(${_exec_name} PRIVATE
     opengl32
     glu32
     glew-2.3.1
-    glext
     nv_dds
 )
 

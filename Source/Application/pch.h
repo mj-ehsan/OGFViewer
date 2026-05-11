@@ -36,9 +36,18 @@
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
 #include <gl/glew.h>
-#include <gl/glext.h>
 
 #include <string>
+#include <vector>
+#include <memory>
+#include <iostream>
+#include <fstream>
+
+#include "Types.h"
+
+#define STRINGIFY(x) #x
+#define TOSTRING(x) STRINGIFY(x)
+#define TODO(msg) __pragma(message(__FILE__ " (" TOSTRING(__LINE__) ") TODO: " #msg))
 
 struct Vertex
 {
@@ -50,7 +59,7 @@ struct Material
 {
 	unsigned int	*m_Indices;
 	int				m_IndicesCount;
-	Vertex			*m_Vertices;
+	std::vector<Vertex>	m_Vertices;
 	int				m_VerticesCount;
 	int				m_MaterialID;
 };

@@ -28,13 +28,13 @@ CChildView::CChildView()
 			"OGFViewer.cfg", fileException.m_cause );
 	}
 
-	// Вызывает исключение при запуске (проверено после сборке в CMake, в VS исключения нет)
-	/* 
+	TODO(Вызывает исключение при запуске без конфига)
+
 	char szBuffer[256];
 	memset(szBuffer,0,256);
 	UINT nActual = myFile.Read( szBuffer, sizeof( szBuffer ) );
 	m_PathToStalker.assign(szBuffer);
-	 */
+	
 	m_MouseLPressed = false;
 	m_MouseRPressed = false;
 }
@@ -113,7 +113,7 @@ BOOL CChildView::InitRender()
 	glEnable(GL_CULL_FACE);
 	glDisable(GL_CULL_FACE);
 	glEnable(GL_TEXTURE_2D);
-	glClearColor( 0,0,0,0 );
+	glClearColor(0.28f, 0.70f, 0.96f, 0.f); // rgb(72, 179, 247)
 	glEnable(GL_DEPTH_TEST);
 	return TRUE;
 }
@@ -322,8 +322,7 @@ void CChildView::LoadModel()
 	SetCurrentDirectory(szCurrentDirectory);
 	if(m_Model)
 	{
-		delete m_Model;
-		m_Model = NULL;
+		m_Model = nullptr;
 	}
-	m_Model = Load((char*)pszFileName,m_PathToStalker);
+	m_Model = Load((char*)pszFileName, m_PathToStalker);
 }
